@@ -12,9 +12,12 @@
   "type": "commonjs",
   "dependencies": {
     "axios": "^1.8.2",
+    "react-redux": "^9.2.0",
+    "@reduxjs/toolkit": "^2.6.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^8.12.1",
     "nodemon": "^3.1.9"
+    
   }
 }
