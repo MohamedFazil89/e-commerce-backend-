@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors")
-const Data = require("./Carddata.js")
+const Products  = require("./Carddata.js")
 
 const PORT = 5000;
 const app = express();
@@ -11,12 +11,14 @@ app.use(express.json());
 // Connect to MongoDB
 // mongod --dbpath C:\data\db <---> command to start mongodb manually
 
-mongoose.connect('mongodb://localhost:27017/Pharmacy')
+mongoose.connect('mongodb://localhost:27017/PCBUILD')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Define the schema for users
+
 const Users = new mongoose.Schema({
+  name: String,
   email: String,
   password: String
 });
@@ -25,14 +27,14 @@ const Users = new mongoose.Schema({
 const User_Collections = mongoose.model("Users", Users);
 
 // Register Route (fixed insertMany)
-app.post("/Register", async (req, res) => {
-  const { email, password } = req.body;  // Expect email and password in the request body
+app.post("/user/Register", async (req, res) => {
+  const {name, email, password } = req.body;  // Expect email and password in the request body
 
   if (!email || !password) {
     return res.status(400).send('Email and password are required');
   }
 
-  const newUser = new User_Collections({ email, password });
+  const newUser = new User_Collections({ name, email, password });
 
 
   try {
@@ -46,8 +48,8 @@ app.post("/Register", async (req, res) => {
 });
 
 // Login Route
-app.post("/Login", async (req, res) => {
-  const { email, password } = req.body;  // Expect email and password in the request body
+app.post("/user/Login", async (req, res) => {
+  const { name, email, password } = req.body;  // Expect email and password in the request body
   console.log(email, password);
 
 
@@ -76,73 +78,40 @@ app.post("/Login", async (req, res) => {
 });
 
 // Product
-
-
-const HealthCare = new mongoose.Schema({
-  id: Number,
-  img: String,
-  title: String,
-  description: String,
-  price: String,
+const productSchema = new mongoose.Schema({
+  id: { type: Number, required: true },
+  img: { type: String, required: true },
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  price: { type: String, required: true },
+  type: { type: String, required: true }
 });
 
-const PersonalCare = new mongoose.Schema({
-  id: Number,
-  img: String,
-  title: String,
-  description: String,
-  price: String,
-});
-
-const MedicalDevices = new mongoose.Schema({
-  id: Number,
-  img: String,
-  title: String,
-  description: String,
-  price: String,
-});
-const BabyCare = new mongoose.Schema({
-  id: Number,
-  img: String,
-  title: String,
-  description: String,
-  price: String,
-});
 // Create models (if they are not already created elsewhere)
-const Healthcare = mongoose.model("HealthCare", HealthCare);
-const Personalcare = mongoose.model("PersonalCare", PersonalCare);
-const Medicaldevices = mongoose.model("MedicalDevices", MedicalDevices);
-const Babycare = mongoose.model("BabyCare", BabyCare);
-
+const Products_ = mongoose.model("PRODUCTS", productSchema);
 
 app.get("/PostProducts", async (req, res) => {
   try {
-    await Babycare.insertMany(Data.babycareItems);
-
-    await Personalcare.insertMany(Data.personalcareItems);
-
-    await Healthcare.insertMany(Data.healthcareItems);
-
-    await Medicaldevices.insertMany(Data.medicalDevicesItems);
-
-    res.status(201).send("Products posted successfully.");
+    if (!Products || Products.length === 0) {
+      return res.status(400).send("No products to insert");
+    }
+    const result = await Products_.insertMany(Products, { ordered: false });
+    res.status(201).json({ message: "Products posted successfully", inserted: result.length });
   } catch (error) {
     console.error("Error posting products:", error);
-    res.status(500).send("Error posting products");
+    res.status(500).json({ message: "Error posting products", error: error.message });
   }
 });
+
 
 
 
 app.get("/api/products", async (req, res) => {
   try {
     // Use Mongoose models to query the data
-    const healthcare = await Healthcare.find({});
-    const personalcare = await Personalcare.find({});
-    const medicaldevices = await Medicaldevices.find({});
-    const babycare = await Babycare.find({})
+    const Product_Collection = await Products_.find({});
 
-    res.json({ healthcare, personalcare, medicaldevices, babycare });
+    res.json({ Product_Collection });
   } catch (error) {
     console.error("Error fetching data:", error);
     res.status(500).json({ message: "Server error" });

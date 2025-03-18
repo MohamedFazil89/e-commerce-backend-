@@ -11,13 +11,13 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "axios": "^1.8.2",
-    "react-redux": "^9.2.0",
     "@reduxjs/toolkit": "^2.6.0",
+    "axios": "^1.8.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "mongodb": "^6.15.0",
     "mongoose": "^8.12.1",
-    "nodemon": "^3.1.9"
-    
+    "nodemon": "^3.1.9",
+    "react-redux": "^9.2.0"
   }
 }
