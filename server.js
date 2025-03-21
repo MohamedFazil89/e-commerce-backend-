@@ -1,12 +1,18 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors")
-const Products  = require("./Carddata.js")
+const Products = require("./Carddata.js");
+const PC_Components = require("./ComponentCardData.js");
+const nodemailer = require("nodemailer");
+
 
 const PORT = 5000;
 const app = express();
 app.use(cors())
 app.use(express.json());
+
+
+
 
 // Connect to MongoDB
 // mongod --dbpath C:\data\db <---> command to start mongodb manually
@@ -28,7 +34,7 @@ const User_Collections = mongoose.model("Users", Users);
 
 // Register Route (fixed insertMany)
 app.post("/user/Register", async (req, res) => {
-  const {name, email, password } = req.body;  // Expect email and password in the request body
+  const { name, email, password } = req.body;  // Expect email and password in the request body
 
   if (!email || !password) {
     return res.status(400).send('Email and password are required');
@@ -137,7 +143,7 @@ const Orders = mongoose.model("OrderHistory", OrderHistorySchema);
 app.post("/OrderPlace", async (req, res) => {
   const { email, NewOrders } = req.body;
   console.log("NewOrders:", NewOrders);
-  
+
   try {
     // Assign NewOrders directly to OrderItems
     const newOrder = await Orders.create({ user: email, OrderItems: NewOrders });
@@ -161,6 +167,65 @@ app.get("/OrderHistory", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
+
+
+app.post("/user/ShippingDetails", async (req, res) => {
+  // Expecting name, address, email, etc. in the request body
+  const { name, address, email } = req.body;
+  const adminEmail = "nmohammedfazil790@gmail.com"; // Set your admin email here
+
+  // Create a Nodemailer transporter using Gmail
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "nmohamedfazil790@gmail.com",
+      pass: "gccc qdge cgzv njuj"
+    }
+  });
+
+  // Email to the user (confirmation)
+  const userMailOptions = {
+    from: '"PC Build Store" <no-reply@pcbuildstore.com>',
+    to: email,
+    subject: "Order Confirmed",
+    text: `Hi ${name},
+
+Your order has been confirmed.
+Shipping Address: ${address}
+
+Thank you for shopping with us!
+
+Best regards,
+PC Build Store`
+  };
+
+  // Email to the admin (notification)
+  const adminMailOptions = {
+    from: 'nmohamedfazil790@gmail.com',
+    to: adminEmail,
+    subject: "New Shipping Details Received",
+    text: `New shipping details received:
+
+Name: ${name}
+Email: ${email}
+Address: ${address}
+
+Please process this order accordingly.`
+  };
+
+  try {
+    // Send confirmation email to user
+    await transporter.sendMail(userMailOptions);
+    // Send notification email to admin
+    await transporter.sendMail(adminMailOptions);
+
+    res.status(200).json({ message: "Shipping details submitted and emails sent." });
+  } catch (err) {
+    console.error("Error sending emails:", err);
+    res.status(500).json({ message: "Error sending shipping details." });
+  }
+});
+
 
 // Start the server
 app.listen(PORT, () => {
