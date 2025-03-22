@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors")
 const Products = require("./Carddata.js");
-const PC_Components = require("./ComponentCardData.js");
+const ComponentsData = require("./ComponentCardData.js");
 const nodemailer = require("nodemailer");
 
 
@@ -108,6 +108,51 @@ app.get("/PostProducts", async (req, res) => {
     res.status(500).json({ message: "Error posting products", error: error.message });
   }
 });
+
+// Define the schema for components
+const componentSchema = new mongoose.Schema({
+  id: { type: Number, required: true },
+  img: { type: String, required: true },
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  price: { type: String, required: true },
+  type: { type: String, required: true }
+});
+
+// Create the model for components
+const Components_ = mongoose.model("COMPONENTS", componentSchema);
+
+// Route to post components data into MongoDB
+app.get("/PostComponents", async (req, res) => {
+  try {
+    if (!ComponentsData || ComponentsData.length === 0) {
+      return res.status(400).send("No components to insert");
+    }
+    const result = await Components_.insertMany(ComponentsData, { ordered: false });
+    res.status(201).json({ 
+      message: "Components posted successfully", 
+      inserted: result.length 
+    });
+  } catch (error) {
+    console.error("Error posting components:", error);
+    res.status(500).json({ 
+      message: "Error posting components", 
+      error: error.message 
+    });
+  }
+});
+
+// Get all components from the database
+app.get("/api/components", async (req, res) => {
+  try {
+    const components = await Components_.find({});
+    res.json(components);
+  } catch (error) {
+    console.error("Error fetching components:", error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
 
 
 
