@@ -1,143 +1,144 @@
 const ComponentsData = [
   {
     id: 1,
-    img: "https://via.placeholder.com/150?text=Intel+Core+i9-13900K",
+    img:"https://m.media-amazon.com/images/I/61m8egNHmEL._AC_UF350,350_QL80_.jpg",
     title: "Intel Core i9-13900K",
     description: "High-performance CPU for gaming and productivity.",
-    price: "589.99",
+    price: "58999",
     type: "Processor"
   },
   {
     id: 2,
-    img: "https://via.placeholder.com/150?text=AMD+Ryzen+9+7950X",
+    img:"https://m.media-amazon.com/images/I/51jNS8epPeL._AC_UF1000,1000_QL80_.jpg",
     title: "AMD Ryzen 9 7950X",
     description: "Powerful processor with excellent multitasking.",
-    price: "549.99",
+    price: "54999",
     type: "Processor"
   },
   {
     id: 3,
-    img: "https://via.placeholder.com/150?text=Intel+Core+i7-13700K",
+    img:"https://m.media-amazon.com/images/I/515lU6LNpsL.jpg",
     title: "Intel Core i7-13700K",
     description: "Balanced performance for gaming and content creation.",
-    price: "429.99",
+    price: "42999",
     type: "Processor"
   },
   {
     id: 4,
-    img: "https://via.placeholder.com/150?text=AMD+Ryzen+7+7700X",
+    img:"https://m.media-amazon.com/images/I/51hfER1cZVL.jpg",
     title: "AMD Ryzen 7 7700X",
     description: "Excellent for gaming with high clock speeds.",
-    price: "359.99",
+    price: "35999",
     type: "Processor"
   },
   {
     id: 5,
-    img: "https://via.placeholder.com/150?text=Intel+Core+i5-13600K",
+    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQowFDFQBPb4ZYmkMOP1tUORDzZOjndKu5WzQ&s",
     title: "Intel Core i5-13600K",
     description: "Mid-range CPU ideal for modern gaming and daily tasks.",
-    price: "299.99",
+    price: "29999",
     type: "Processor"
   },
   {
     id: 6,
-    img: "https://via.placeholder.com/150?text=AMD+Ryzen+5+7600X",
+    img:"https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-5-7600x.jpg",
     title: "AMD Ryzen 5 7600X",
     description: "Affordable performance for budget gaming builds.",
-    price: "249.99",
+    price: "24999",
     type: "Processor"
   },
   {
     id: 7,
-    img: "https://via.placeholder.com/150?text=Intel+Core+i3-13100",
+    img:"https://compumise.in/wp-content/uploads/2023/03/19-118-432-03.png",
     title: "Intel Core i3-13100",
     description: "Entry-level processor for basic computing tasks.",
-    price: "159.99",
+    price: "15999",
     type: "Processor"
   },
   {
     id: 8,
-    img: "https://via.placeholder.com/150?text=AMD+Athlon+3000G",
+    img:"https://www.techpowerup.com/review/amd-athlon-3000g-with-vega-3-graphics/images/package1.jpg",
     title: "AMD Athlon 3000G",
     description: "Budget-friendly CPU for everyday use.",
-    price: "89.99",
+    price: "8999",
     type: "Processor"
   },
   {
     id: 9,
-    img: "https://via.placeholder.com/150?text=Intel+Pentium+Gold",
+    img:"https://parshvacomputers.co.in/public/uploads/all/N3ZklhmXmHGxeiT5hhVtlIQ9lCor69AlsZisbeba.jpg",
     title: "Intel Pentium Gold G6400",
     description: "Efficient processor for light multitasking.",
-    price: "109.99",
+    price: "10999",
     type: "Processor"
   },
   {
     id: 10,
-    img: "https://via.placeholder.com/150?text=AMD+Ryzen+3+4100",
+    img:"https://5.imimg.com/data5/SELLER/Default/2022/6/UJ/NB/AE/110783022/amd-4000-series-ryzen-3-4100-desktop-processor.jpg",
     title: "AMD Ryzen 3 4100",
     description: "Basic CPU for cost-effective computing.",
-    price: "129.99",
+    price: "12999",
     type: "Processor"
   },
+
   {
     id: 11,
-    img: "https://via.placeholder.com/150?text=ASUS+ROG+Strix+Z790-E",
+    img: "https://dlcdnwebimgs.asus.com/files/media/E8F9316B-CB25-42B5-9422-CA99338CDB38/v1/img/kv/ROG-STRIX-Z790-E-II.png",
     title: "ASUS ROG Strix Z790-E",
     description: "Premium motherboard with robust power delivery.",
-    price: "399.99",
+    price: "39999",
     type: "Motherboard"
   },
   {
     id: 12,
-    img: "https://via.placeholder.com/150?text=MSI+MEG+Z690+Unify",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpL-iSGPgUU0zQslnCGn4Cj5J3t2Nv6ap8_g&s",
     title: "MSI MEG Z690 Unify",
     description: "High-performance board with advanced cooling features.",
-    price: "379.99",
+    price: "37999",
     type: "Motherboard"
   },
   {
     id: 13,
-    img: "https://via.placeholder.com/150?text=Gigabyte+AORUS+X670",
+    img: "https://m.media-amazon.com/images/I/71ubTinPcOL._AC_UF1000,1000_QL80_.jpg",
     title: "Gigabyte AORUS X670",
     description: "Feature-rich motherboard for AMD builds.",
-    price: "349.99",
+    price: "34999",
     type: "Motherboard"
   },
   {
     id: 14,
-    img: "https://via.placeholder.com/150?text=ASRock+B660M+Pro4",
+    img: "https://m.media-amazon.com/images/I/91NU8vKX0WL.jpg",
     title: "ASRock B660M Pro4",
     description: "Affordable board with essential features.",
-    price: "129.99",
+    price: "12999",
     type: "Motherboard"
   },
   {
     id: 15,
-    img: "https://via.placeholder.com/150?text=MSI+B550-A+Pro",
+    img: "https://m.media-amazon.com/images/I/917DzuUbxxL.jpg",
     title: "MSI B550-A Pro",
     description: "Solid motherboard for mid-range AMD builds.",
-    price: "149.99",
+    price: "14999",
     type: "Motherboard"
   },
   {
     id: 16,
-    img: "https://via.placeholder.com/150?text=ASUS+Prime+B660-Plus",
+    img: "https://computersolutionranchi.com/wp-content/uploads/2022/12/81ooBORY4aL._SX522_.jpg",
     title: "ASUS Prime B660-Plus",
     description: "Reliable board for Intel 12th gen processors.",
-    price: "159.99",
+    price: "15999",
     type: "Motherboard"
   },
   {
     id: 17,
-    img: "https://via.placeholder.com/150?text=Gigabyte+Z690+Aorus+Elite",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRILAtZSIblQz4eaZQGrFqNSqbXupjdderB4g&s",
     title: "Gigabyte Z690 Aorus Elite",
     description: "High-end motherboard with excellent connectivity.",
-    price: "299.99",
+    price: "29999",
     type: "Motherboard"
   },
   {
     id: 18,
-    img: "https://via.placeholder.com/150?text=ASRock+X570+Taichi",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdc3YRjC_f23Q-eDVAM--jePgIGME2p9WvQ&s",
     title: "ASRock X570 Taichi",
     description: "Feature-packed board for high-performance AMD systems.",
     price: "399.99",
@@ -145,7 +146,7 @@ const ComponentsData = [
   },
   {
     id: 19,
-    img: "https://via.placeholder.com/150?text=Biostar+B660M+Pro+",
+    img: "https://m.media-amazon.com/images/I/61oGooBNNGL.jpg",
     title: "Biostar B660M Pro+",
     description: "Compact board with good performance for budget builds.",
     price: "119.99",
@@ -153,14 +154,12 @@ const ComponentsData = [
   },
   {
     id: 20,
-    img: "https://via.placeholder.com/150?text=ASUS+TUF+Gaming+B550-Plus",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzFznTJSFKg6bBQGWMU9BqljWfO-SyYtevyw&s",
     title: "ASUS TUF Gaming B550-Plus",
     description: "Durable motherboard designed for gaming and stability.",
     price: "169.99",
     type: "Motherboard"
   },
-
-
   {
     id: 21,
     img: "https://m.media-amazon.com/images/I/51Gs2sm696L.jpg",
@@ -171,7 +170,7 @@ const ComponentsData = [
   },
   {
     id: 22,
-    img: "https://via.placeholder.com/150?text=G.Skill+TridentZ+RGB+32GB",
+    img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTgRkvhcgctraYhxC6LvaaZ0Zlwp2N8bIk16zXSSqpe-lAbSyxPW-TB527pYyCNYvV7ZC6CHz6dE0csNm2NzXOwbsteZ1nb-2DjxVQcwLMJSPLVohBIsR6x",
     title: "G.Skill TridentZ RGB 32GB",
     description: "Stylish, high-performance memory with RGB lighting.",
     price: "149.99",
@@ -179,7 +178,7 @@ const ComponentsData = [
   },
   {
     id: 23,
-    img: "https://via.placeholder.com/150?text=Kingston+HyperX+Fury+16GB",
+    img: "https://m.media-amazon.com/images/I/61aDeyMWIsL.jpg",
     title: "Kingston HyperX Fury 16GB",
     description: "Reliable DDR4 memory for everyday computing.",
     price: "69.99",
@@ -187,7 +186,7 @@ const ComponentsData = [
   },
   {
     id: 24,
-    img: "https://via.placeholder.com/150?text=Crucial+MX500+32GB",
+    img: "https://m.media-amazon.com/images/I/51BZEAbbFDL.jpg",
     title: "Crucial MX500 32GB",
     description: "High-performance memory with robust durability.",
     price: "139.99",
@@ -195,7 +194,7 @@ const ComponentsData = [
   },
   {
     id: 25,
-    img: "https://via.placeholder.com/150?text=Corsair+Dominator+Platinum+16GB",
+    img: "https://m.media-amazon.com/images/I/61kZaFXI2uL._AC_UF1000,1000_QL80_.jpg",
     title: "Corsair Dominator Platinum 16GB",
     description: "Premium RAM offering excellent performance and reliability.",
     price: "99.99",
@@ -203,7 +202,7 @@ const ComponentsData = [
   },
   {
     id: 26,
-    img: "https://via.placeholder.com/150?text=G.Skill+Ripjaws+V+16GB",
+    img: "https://m.media-amazon.com/images/I/618SEnJR1nL.jpg",
     title: "G.Skill Ripjaws V 16GB",
     description: "Great performance memory for gaming and professional use.",
     price: "79.99",
@@ -211,7 +210,7 @@ const ComponentsData = [
   },
   {
     id: 27,
-    img: "https://via.placeholder.com/150?text=Kingston+HyperX+Predator+32GB",
+    img: "https://5.imimg.com/data5/MJ/UG/RJ/SELLER-5409718/original-kingston-hyperx-predator-rgb-32gb-4x8gb-ddr4-pc4-25600c16-3200mhz-quad-channel-kit-500x500.jpg",
     title: "Kingston HyperX Predator 32GB",
     description: "High-end performance memory with aggressive timings.",
     price: "159.99",
@@ -219,7 +218,7 @@ const ComponentsData = [
   },
   {
     id: 28,
-    img: "https://via.placeholder.com/150?text=Patriot+Viper+Steel+16GB",
+    img: "https://m.media-amazon.com/images/I/81XNrcp5BKL.jpg",
     title: "Patriot Viper Steel 16GB",
     description: "Fast and reliable memory perfect for gaming rigs.",
     price: "69.99",
@@ -227,7 +226,7 @@ const ComponentsData = [
   },
   {
     id: 29,
-    img: "https://via.placeholder.com/150?text=Team+T-Force+Delta+16GB",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2fgQm4_EqGAp1_i4tRWhHICm2_g2TsVbDA&s",
     title: "Team T-Force Delta 16GB",
     description: "RGB-enhanced memory for a dynamic gaming setup.",
     price: "89.99",
@@ -235,7 +234,7 @@ const ComponentsData = [
   },
   {
     id: 30,
-    img: "https://via.placeholder.com/150?text=Crucial+Ballistix+TLC+16GB",
+    img: "https://5.imimg.com/data5/SELLER/Default/2021/2/LU/ZL/LK/49942529/crucial-ballistix-16gb-kit-2-x-8gb-ddr4-3600-desktop-gaming-memory-red-1--500x500.jpg",
     title: "Crucial Ballistix TLC 16GB",
     description: "Solid performance memory with reliability for multitasking.",
     price: "74.99",
@@ -243,7 +242,7 @@ const ComponentsData = [
   },
   {
     id: 31,
-    img: "https://via.placeholder.com/150?text=Samsung+970+EVO+Plus+1TB",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcA_40H5XrRVfoBc6BwOT3qih_ghCa4uJR2A&s",
     title: "Samsung 970 EVO Plus 1TB",
     description: "High-speed NVMe SSD for blazing fast boot times.",
     price: "149.99",
@@ -251,7 +250,7 @@ const ComponentsData = [
   },
   {
     id: 32,
-    img: "https://via.placeholder.com/150?text=Western+Digital+Blue+1TB",
+    img: "https://sathya.in/media/94154/catalog/Western%20Digital%20WD10EZEX_02.jpg",
     title: "Western Digital Blue 1TB",
     description: "Reliable SATA SSD for everyday computing.",
     price: "109.99",
@@ -259,7 +258,7 @@ const ComponentsData = [
   },
   {
     id: 33,
-    img: "https://via.placeholder.com/150?text=Crucial+MX500+1TB",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpnnutgSrjv5uRZ32sdMF-jcfzEHkpSPVnA&s",
     title: "Crucial MX500 1TB",
     description: "High-performance SSD with robust durability.",
     price: "119.99",
@@ -267,7 +266,7 @@ const ComponentsData = [
   },
   {
     id: 34,
-    img: "https://via.placeholder.com/150?text=Samsung+860+EVO+1TB",
+    img: "https://elitehubs.com/cdn/shop/products/mz-77e1t0bw-image-4-600x600-1.webp?v=1683974955&width=533",
     title: "Samsung 860 EVO 1TB",
     description: "Trusted SATA SSD for consistent performance.",
     price: "99.99",
@@ -275,7 +274,7 @@ const ComponentsData = [
   },
   {
     id: 35,
-    img: "https://via.placeholder.com/150?text=Seagate+Barracuda+2TB",
+    img: "https://www.vedantcomputers.com/image/cache/catalog/assets/product/seagate/hdd/st2000dm008/st2000dm008-1-800x800.jpg",
     title: "Seagate Barracuda 2TB",
     description: "High-capacity HDD ideal for mass storage.",
     price: "79.99",
@@ -283,7 +282,7 @@ const ComponentsData = [
   },
   {
     id: 36,
-    img: "https://via.placeholder.com/150?text=WD+Black+2TB",
+    img: "https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850x-nvme-ssd/gallery/wd-black-sn850x-nvme-ssd-heatsink-front.png.thumb.1280.1280.png",
     title: "Western Digital Black 2TB",
     description: "High-performance HDD for demanding workloads.",
     price: "89.99",
@@ -291,7 +290,7 @@ const ComponentsData = [
   },
   {
     id: 37,
-    img: "https://via.placeholder.com/150?text=Kingston+A2000+500GB",
+    img: "https://www.vedantcomputers.com/image/cache/catalog/assets/product/kingston/ssd/sa2000m8-500g/a2000-500gb-2-550x550w.jpg",
     title: "Kingston A2000 500GB",
     description: "Affordable NVMe SSD for fast boot and load times.",
     price: "59.99",
@@ -299,7 +298,7 @@ const ComponentsData = [
   },
   {
     id: 38,
-    img: "https://via.placeholder.com/150?text=Crucial+P5+500GB",
+    img: "https://www.crucial.com/content/dam/crucial/ssd-products/p5-plus/images/web/amazon-gallery/en/interoperable-2-en.jpg",
     title: "Crucial P5 500GB",
     description: "Budget-friendly NVMe SSD with solid performance.",
     price: "64.99",
@@ -307,7 +306,7 @@ const ComponentsData = [
   },
   {
     id: 39,
-    img: "https://via.placeholder.com/150?text=Seagate+FireCuda+510+1TB",
+    img: "https://m.media-amazon.com/images/I/41vzR2RhNjL.jpg",
     title: "Seagate FireCuda 510 1TB",
     description: "Gaming SSD with high endurance and speed.",
     price: "139.99",
@@ -315,7 +314,7 @@ const ComponentsData = [
   },
   {
     id: 40,
-    img: "https://via.placeholder.com/150?text=Samsung+980+PRO+1TB",
+    img: "https://m.media-amazon.com/images/I/812DsfxDSVL.jpg",
     title: "Samsung 980 PRO 1TB",
     description: "Next-gen NVMe SSD with extreme performance.",
     price: "169.99",
@@ -323,7 +322,7 @@ const ComponentsData = [
   },
   {
     id: 41,
-    img: "https://via.placeholder.com/150?text=NVIDIA+RTX+3080",
+    img: "https://5.imimg.com/data5/SELLER/Default/2022/9/KR/GN/OZ/98782831/nvidia-geforce-rtx-3080-family-graphic-card-500x500.png",
     title: "NVIDIA GeForce RTX 3080",
     description: "High-end GPU for excellent gaming performance.",
     price: "699.99",
@@ -331,7 +330,7 @@ const ComponentsData = [
   },
   {
     id: 42,
-    img: "https://via.placeholder.com/150?text=AMD+RX+6800+XT",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0sB9mA8Ft_WneNyxXy8RP7U4_crXdZe7zA&s",
     title: "AMD Radeon RX 6800 XT",
     description: "Powerful GPU for immersive gaming experiences.",
     price: "649.99",
@@ -339,7 +338,7 @@ const ComponentsData = [
   },
   {
     id: 43,
-    img: "https://via.placeholder.com/150?text=NVIDIA+RTX+3070",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8GC_4bUFGug31Ask-Jo6_Z5RsFBxenpLhSg&s",
     title: "NVIDIA GeForce RTX 3070",
     description: "Great balance of performance and efficiency.",
     price: "499.99",
@@ -347,7 +346,7 @@ const ComponentsData = [
   },
   {
     id: 44,
-    img: "https://via.placeholder.com/150?text=AMD+RX+6700+XT",
+    img: "https://m.media-amazon.com/images/I/711OlprqckL.jpg",
     title: "AMD Radeon RX 6700 XT",
     description: "Mid-range GPU with solid performance for 1440p gaming.",
     price: "479.99",
@@ -355,7 +354,7 @@ const ComponentsData = [
   },
   {
     id: 45,
-    img: "https://via.placeholder.com/150?text=NVIDIA+RTX+3060",
+    img: "https://m.media-amazon.com/images/I/61XAtpgr1lL.jpg",
     title: "NVIDIA GeForce RTX 3060",
     description: "Affordable GPU ideal for high-quality gaming.",
     price: "329.99",
@@ -363,7 +362,7 @@ const ComponentsData = [
   },
   {
     id: 46,
-    img: "https://via.placeholder.com/150?text=AMD+RX+6600",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NC1W2acWsbFMoHpqwLh15CN4Qs1gfDYv8Q&s",
     title: "AMD Radeon RX 6600",
     description: "Budget-friendly GPU for 1080p gaming.",
     price: "279.99",
@@ -371,7 +370,7 @@ const ComponentsData = [
   },
   {
     id: 47,
-    img: "https://via.placeholder.com/150?text=NVIDIA+RTX+3090",
+    img: "https://m.media-amazon.com/images/I/71ytP3Pa6IL.jpg",
     title: "NVIDIA GeForce RTX 3090",
     description: "Ultimate GPU for gaming and creative workloads.",
     price: "1499.99",
@@ -379,7 +378,7 @@ const ComponentsData = [
   },
   {
     id: 48,
-    img: "https://via.placeholder.com/150?text=AMD+RX+6900+XT",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdmH2K9t8mcR1bdeGQQmMrkastAlMB8zZA0g&s",
     title: "AMD Radeon RX 6900 XT",
     description: "Top-tier GPU for peak gaming performance.",
     price: "999.99",
@@ -387,7 +386,7 @@ const ComponentsData = [
   },
   {
     id: 49,
-    img: "https://via.placeholder.com/150?text=NVIDIA+RTX+3060+Ti",
+    img: "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/geforce-rtx-3060-ti-out-december-2/nvidia-geforce-rtx-3060-ti-announcement-article-key-visual.jpg",
     title: "NVIDIA GeForce RTX 3060 Ti",
     description: "Excellent performance at a reasonable price.",
     price: "399.99",
@@ -395,7 +394,7 @@ const ComponentsData = [
   },
   {
     id: 50,
-    img: "https://via.placeholder.com/150?text=AMD+RX+6650+XT",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQON0DIuuBFd551qPkFe2afo6eXX-bzNkMyDQ&s",
     title: "AMD Radeon RX 6650 XT",
     description: "Efficient GPU for smooth 1080p and 1440p gaming.",
     price: "359.99",
@@ -403,7 +402,7 @@ const ComponentsData = [
   },
   {
     id: 51,
-    img: "https://via.placeholder.com/150?text=Corsair+RM750x",
+    img: "https://m.media-amazon.com/images/I/71vXweqjv+L.jpg",
     title: "Corsair RM750x",
     description: "High efficiency 750W PSU with modular cables.",
     price: "129.99",
@@ -411,7 +410,7 @@ const ComponentsData = [
   },
   {
     id: 52,
-    img: "https://via.placeholder.com/150?text=EVGA+SuperNOVA+750+G+",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr97jKT7MdmrLm7PnupDBv63znuHmrV_S9Ng&s",
     title: "EVGA SuperNOVA 750 G+",
     description: "Reliable 750W PSU with 80+ Gold certification.",
     price: "139.99",
@@ -419,7 +418,7 @@ const ComponentsData = [
   },
   {
     id: 53,
-    img: "https://via.placeholder.com/150?text=Seasonic+FOCUS+GX-650",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWTmvUYE_04nQeYtn-8lpPG6QhgXVUcprexw&s",
     title: "Seasonic FOCUS GX-650",
     description: "Efficient 650W PSU with full modular design.",
     price: "109.99",
@@ -435,7 +434,7 @@ const ComponentsData = [
   },
   {
     id: 55,
-    img: "https://via.placeholder.com/150?text=Corsair+CX650M",
+    img: "https://m.media-amazon.com/images/I/81ghpcd8hrL.jpg",
     title: "Corsair CX650M",
     description: "Semi-modular 650W PSU with 80+ Bronze certification.",
     price: "79.99",
@@ -443,7 +442,7 @@ const ComponentsData = [
   },
   {
     id: 56,
-    img: "https://via.placeholder.com/150?text=EVGA+600+BR",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM0yj4wUAXHIAmd_azA0JdKaXYQ5Z-jy9hHg&s",
     title: "EVGA 600 BR",
     description: "Budget 600W PSU with reliable performance.",
     price: "59.99",
@@ -451,7 +450,7 @@ const ComponentsData = [
   },
   {
     id: 57,
-    img: "https://via.placeholder.com/150?text=Seasonic+FOCUS+GX-850",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8LAT5Gn6-OZrVAuLMINK3hpx2Lg8njVfOew&s",
     title: "Seasonic FOCUS GX-850",
     description: "850W high-performance PSU with full modularity.",
     price: "149.99",
@@ -459,7 +458,7 @@ const ComponentsData = [
   },
   {
     id: 58,
-    img: "https://via.placeholder.com/150?text=Thermaltake+Smart+500W",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjyJNgQJB-3HaMEXE6aAiuv8Pdwxq-iWYkg&s",
     title: "Thermaltake Smart 500W",
     description: "Cost-effective PSU for basic systems.",
     price: "49.99",
@@ -467,7 +466,7 @@ const ComponentsData = [
   },
   {
     id: 59,
-    img: "https://via.placeholder.com/150?text=BeQuiet!+Straight+Power+11+550W",
+    img: "https://www.bequiet.com/volumes/pim/powersupply/straightpower/straightpower11/3d/lowwatt/004.jpg",
     title: "BeQuiet! Straight Power 11 550W",
     description: "Quiet and efficient 550W PSU with high performance.",
     price: "89.99",
@@ -475,7 +474,7 @@ const ComponentsData = [
   },
   {
     id: 60,
-    img: "https://via.placeholder.com/150?text=Corsair+RM850x",
+    img: "https://www.bequiet.com/volumes/pim/powersupply/straightpower/straightpower11/3d/lowwatt/004.jpg",
     title: "Corsair RM850x",
     description: "Premium 850W PSU with high efficiency and modular cables.",
     price: "149.99",
@@ -483,7 +482,7 @@ const ComponentsData = [
   },
   {
     id: 61,
-    img: "https://via.placeholder.com/150?text=NZXT+H510",
+    img: "https://images.aasaan.shop/stores/thunderz/products/product_images/seo/seo_1713608687313.png",
     title: "NZXT H510",
     description: "Mid-tower case with sleek design and excellent cable management.",
     price: "69.99",
@@ -491,7 +490,7 @@ const ComponentsData = [
   },
   {
     id: 62,
-    img: "https://via.placeholder.com/150?text=Fractal+Design+Meshify+C",
+    img: "https://m.media-amazon.com/images/I/91Edlq2QdFL._AC_UF1000,1000_QL80_.jpg",
     title: "Fractal Design Meshify C",
     description: "Compact mid-tower with a focus on airflow and aesthetics.",
     price: "89.99",
@@ -499,7 +498,7 @@ const ComponentsData = [
   },
   {
     id: 63,
-    img: "https://via.placeholder.com/150?text=Cooler+Master+MasterBox+NR600",
+    img: "https://a.storyblok.com/f/281110/640x811/ada6146465/nr600-odd-sec3-1.png/m/640x0/smart",
     title: "Cooler Master MasterBox NR600",
     description: "Minimalist case with excellent cooling potential.",
     price: "79.99",
@@ -507,7 +506,7 @@ const ComponentsData = [
   },
   {
     id: 64,
-    img: "https://via.placeholder.com/150?text=Phanteks+P400A",
+    img: "https://m.media-amazon.com/images/I/81MRlQKdq1L.jpg",
     title: "Phanteks P400A",
     description: "High airflow case with a clean and modern design.",
     price: "99.99",
@@ -515,7 +514,7 @@ const ComponentsData = [
   },
   {
     id: 65,
-    img: "https://via.placeholder.com/150?text=Corsair+iCUE+400C",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXYfjDsWIuK0dasHb6TKQi54jQ8Be9XBayQ&s",
     title: "Corsair iCUE 400C",
     description: "Elegant case with tempered glass and excellent build quality.",
     price: "109.99",
@@ -523,7 +522,7 @@ const ComponentsData = [
   },
   {
     id: 66,
-    img: "https://via.placeholder.com/150?text=Thermaltake+V200",
+    img: "https://m.media-amazon.com/images/I/71AE8TX13OL.jpg",
     title: "Thermaltake V200",
     description: "Budget-friendly case with ample space for components.",
     price: "49.99",
@@ -531,7 +530,7 @@ const ComponentsData = [
   },
   {
     id: 67,
-    img: "https://via.placeholder.com/150?text=Cooler+Master+MasterCase+H500",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTctqS6GaXc3o3w8-bpyQiXd7X9aJMIZOyfnA&s",
     title: "Cooler Master MasterCase H500",
     description: "Large mid-tower with high airflow and modern styling.",
     price: "119.99",
@@ -539,7 +538,7 @@ const ComponentsData = [
   },
   {
     id: 68,
-    img: "https://via.placeholder.com/150?text=Fractal+Design+Define+7",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUbUeosJwt3sg8Uglr0tIyRXEJ3U37xlSog&s",
     title: "Fractal Design Define 7",
     description: "Premium case designed for silent operation and modularity.",
     price: "159.99",
@@ -547,7 +546,7 @@ const ComponentsData = [
   },
   {
     id: 69,
-    img: "https://via.placeholder.com/150?text=Corsair+Carbide+Series+275R",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegswEJAdyCOarp_859IhfkS2t9hkRu8HWyQ&s",
     title: "Corsair Carbide Series 275R",
     description: "Sleek mid-tower with a focus on minimalist design and performance.",
     price: "74.99",
@@ -555,7 +554,7 @@ const ComponentsData = [
   },
   {
     id: 70,
-    img: "https://via.placeholder.com/150?text=NZXT+H710",
+    img: "https://m.media-amazon.com/images/I/61TFoBuPGwL.jpg",
     title: "NZXT H710",
     description: "Full-tower case with excellent build quality and plenty of space.",
     price: "149.99",
@@ -563,7 +562,7 @@ const ComponentsData = [
   },
   {
     id: 71,
-    img: "https://via.placeholder.com/150?text=Noctua+NH-D15",
+    img: "https://www.primeabgb.com/wp-content/uploads/2023/10/Noctua-NH-D15-Chromax-Pure-Black-CPU-Cooler-with-Dual-140m-Fans.jpg",
     title: "Noctua NH-D15",
     description: "Top-tier air cooler with exceptional cooling performance.",
     price: "89.99",
@@ -571,7 +570,7 @@ const ComponentsData = [
   },
   {
     id: 72,
-    img: "https://via.placeholder.com/150?text=Corsair+H100i+RGB",
+    img: "https://m.media-amazon.com/images/I/519SXOVA0JL.jpg",
     title: "Corsair H100i RGB",
     description: "Liquid cooling solution with customizable RGB lighting.",
     price: "129.99",
@@ -579,7 +578,7 @@ const ComponentsData = [
   },
   {
     id: 73,
-    img: "https://via.placeholder.com/150?text=Cooler+Master+Hyper+212+RGB",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQVmWQx1sm33MvW_52FOgmwSJ9g4rWuhYe-w&s",
     title: "Cooler Master Hyper 212 RGB",
     description: "Affordable air cooler with excellent performance and RGB lighting.",
     price: "39.99",
@@ -587,7 +586,7 @@ const ComponentsData = [
   },
   {
     id: 74,
-    img: "https://via.placeholder.com/150?text=NZXT+Kraken+X63",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvlK66ciLgcpaHtlQWrwVZ7Itu4kD2_Lr8Qw&s",
     title: "NZXT Kraken X63",
     description: "Efficient liquid cooler with a stunning 280mm radiator.",
     price: "149.99",
@@ -595,7 +594,7 @@ const ComponentsData = [
   },
   {
     id: 75,
-    img: "https://via.placeholder.com/150?text=beQuiet!+Dark+Rock+Pro+4",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zMCm2TkLOPaLSo5KzY9ABfqd8C8CHlCBeA&s",
     title: "beQuiet! Dark Rock Pro 4",
     description: "Silent air cooler with powerful cooling capabilities.",
     price: "89.99",
@@ -603,7 +602,7 @@ const ComponentsData = [
   },
   {
     id: 76,
-    img: "https://via.placeholder.com/150?text=Corsair+H115i+RGB+Platinum",
+    img: "https://elitehubs.com/cdn/shop/products/cw-9060038-ww-image-03-600x600-1-2.jpg?v=1695323848&width=533",
     title: "Corsair H115i RGB Platinum",
     description: "High-performance liquid cooler with a 280mm radiator.",
     price: "169.99",
@@ -611,7 +610,7 @@ const ComponentsData = [
   },
   {
     id: 77,
-    img: "https://via.placeholder.com/150?text=Arctic+Liquid+Freezer+II+240",
+    img: "https://www.vedantcomputers.com/image/cache/catalog/assets/product/arctic/cpu-cooler/acfre00093a/acfre00093a-2-550x550.jpg",
     title: "Arctic Liquid Freezer II 240",
     description: "Excellent liquid cooling solution with minimal noise.",
     price: "119.99",
@@ -619,7 +618,7 @@ const ComponentsData = [
   },
   {
     id: 78,
-    img: "https://via.placeholder.com/150?text=Cooler+Master+MasterLiquid+ML240L",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkD2ImVDv-449--HkH7YbScfw-vGTMzdudDg&s",
     title: "Cooler Master MasterLiquid ML240L",
     description: "Efficient liquid cooler with dual-fan design.",
     price: "99.99",
@@ -627,7 +626,7 @@ const ComponentsData = [
   },
   {
     id: 79,
-    img: "https://via.placeholder.com/150?text=Deepcool+Captain+240",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGM_kpFduzYpwqOOlYMCFgahOPuZC3YrLCkg&s",
     title: "Deepcool Captain 240",
     description: "Reliable liquid cooling system with a 240mm radiator.",
     price: "79.99",
@@ -635,7 +634,7 @@ const ComponentsData = [
   },
   {
     id: 80,
-    img: "https://via.placeholder.com/150?text=Noctua+NH-U12S",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvhIPn0n2oyCdRci8J1SZ_rcO5IYm1KZT5XA&s",
     title: "Noctua NH-U12S",
     description: "Compact and efficient air cooler ideal for mid-range builds.",
     price: "49.99",
@@ -643,7 +642,7 @@ const ComponentsData = [
   },
   {
     id: 81,
-    img: "https://via.placeholder.com/150?text=Windows+11+Home",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYFze3dIZxu8nRKMSqhhrLPggOn3whA-esQ&s",
     title: "Windows 11 Home",
     description: "Latest Windows OS with modern features for home users.",
     price: "139.99",
@@ -651,7 +650,7 @@ const ComponentsData = [
   },
   {
     id: 82,
-    img: "https://via.placeholder.com/150?text=Windows+11+Pro",
+    img: "https://www.licencedeals.com/cdn/shop/products/Windows-11-Pro-32bit-64bit-download-digital-licence.png?v=1635340831o",
     title: "Windows 11 Pro",
     description: "Advanced Windows OS for professional users with extra security.",
     price: "199.99",
@@ -659,7 +658,7 @@ const ComponentsData = [
   },
   {
     id: 83,
-    img: "https://via.placeholder.com/150?text=Ubuntu+22.04+LTS",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgy6zx-VWoF_JywdXVtapPZsmyPRuP9yNO9Q&s",
     title: "Ubuntu 22.04 LTS",
     description: "Popular Linux distribution with long-term support for stability.",
     price: "0.00",
@@ -667,7 +666,7 @@ const ComponentsData = [
   },
   {
     id: 84,
-    img: "https://via.placeholder.com/150?text=Fedora+Workstation",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yxNEkFrAu3vQ4Y90A7g-pQPs_tSO14r2PA&s",
     title: "Fedora Workstation",
     description: "Modern Linux OS with cutting-edge features for developers.",
     price: "0.00",
@@ -675,7 +674,7 @@ const ComponentsData = [
   },
   {
     id: 85,
-    img: "https://via.placeholder.com/150?text=macOS+Monterey",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXIMIDO8mC6AnwXgjgeLzjYGTmg7dodbcQzw&s",
     title: "macOS Monterey",
     description: "Apple's operating system designed for Mac hardware.",
     price: "0.00",
@@ -683,7 +682,7 @@ const ComponentsData = [
   },
   {
     id: 86,
-    img: "https://via.placeholder.com/150?text=Windows+10+Home",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9gdSlwWUnHWWsRsQgIiebGrzwGdjPEGlyw&s",
     title: "Windows 10 Home",
     description: "Reliable Windows OS with familiar interface and features.",
     price: "109.99",
@@ -691,7 +690,7 @@ const ComponentsData = [
   },
   {
     id: 87,
-    img: "https://via.placeholder.com/150?text=Windows+10+Pro",
+    img: "https://networkitstore.in/wp-content/uploads/2022/10/September-special-discount-win10-pro.png",
     title: "Windows 10 Pro",
     description: "Enhanced version of Windows 10 with additional enterprise features.",
     price: "149.99",
@@ -699,7 +698,7 @@ const ComponentsData = [
   },
   {
     id: 88,
-    img: "https://via.placeholder.com/150?text=Linux+Mint+20",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAiPmOVn8Mk9WPcNaqf3YAO_4YLJmE4gZzg&s",
     title: "Linux Mint 20",
     description: "User-friendly Linux distribution ideal for beginners.",
     price: "0.00",
@@ -707,7 +706,7 @@ const ComponentsData = [
   },
   {
     id: 89,
-    img: "https://via.placeholder.com/150?text=Debian+10",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzZmIN-cV6zEifxtreM3SbgIywy55YD7h5Q&s",
     title: "Debian 10",
     description: "Stable Linux OS known for its robustness and versatility.",
     price: "0.00",
@@ -715,14 +714,12 @@ const ComponentsData = [
   },
   {
     id: 90,
-    img: "https://via.placeholder.com/150?text=Pop!_OS",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA4Abvbhlpw28v1DD6DxqHzwACZSjZ3_dxbg&s",
     title: "Pop!_OS",
     description: "Optimized Linux OS for performance and productivity, popular among gamers.",
     price: "0.00",
     type: "Operating System"
   }
+
 ]
-
-
-
 module.exports = ComponentsData;
